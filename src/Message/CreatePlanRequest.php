@@ -161,7 +161,7 @@ class CreatePlanRequest extends AbstractRequest
 
         $statementDescriptor = $this->getStatementDescriptor();
         if ($statementDescriptor != null) {
-            $data['statement_descriptor'] = $statementDescriptor;
+            $data['product']['statement_descriptor'] = $statementDescriptor;
         }
 
         $trialPeriodDays = $this->getTrialPeriodDays();
